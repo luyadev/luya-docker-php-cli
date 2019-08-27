@@ -20,8 +20,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean
 
 # Copy config
-COPY ./../luya.sh /usr/local/bin/luya
-COPY ./../custom.ini /usr/local/etc/php/conf.d/custom.ini
+COPY ./luya.sh /usr/local/bin/luya
+COPY ./custom.ini /usr/local/etc/php/conf.d/custom.ini
 
 # Make the scripts executable
 RUN chmod +x /usr/local/bin/luya
