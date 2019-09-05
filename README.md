@@ -6,7 +6,7 @@
 
 ## Run commands inside application
 
-```php
+```sh
 docker run --rm -v $(pwd):/app luyadev/luya-docker-php-cli health
 ```
 
